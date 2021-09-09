@@ -13,7 +13,7 @@ app.use(express.urlencoded({limit: "20mb", extended:true}))
 app.use(cors());
 app.use('/students', StudentRoutes);
 
-const CONNECTION_URL = 'mongodb+srv://Taimoor:Rockey%40123@devconnector.7vhlr.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';
+const CONNECTION_URL = 'mongodb+srv://<username>:<password>@devconnector.7vhlr.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';
 
 const PORT = process.env.PORT || 5000;
 
